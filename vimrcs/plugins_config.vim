@@ -45,8 +45,7 @@ nmap <c-n> <Plug>yankstack_substitute_newer_paste
 """"""""""""""""""""""""""""""
 let g:ctrlp_working_path_mode = 0
 
-let g:ctrlp_map = '<c-f>'
-map <leader>j :CtrlP<cr>
+let g:ctrlp_map = '<c-t>'
 map <c-b> :CtrlPBuffer<cr>
 
 let g:ctrlp_max_height = 20
@@ -77,8 +76,8 @@ set grepprg=/bin/grep\ -nH
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:NERDTreeWinPos = "right"
-let NERDTreeShowHidden=0
+let g:NERDTreeWinPos = "left"
+let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
@@ -89,18 +88,7 @@ map <leader>nf :NERDTreeFind<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-multiple-cursors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:multi_cursor_use_default_mapping=0
-
-" Default mapping
-let g:multi_cursor_start_word_key      = '<C-s>'
-let g:multi_cursor_select_all_word_key = '<A-s>'
-let g:multi_cursor_start_key           = 'g<C-s>'
-let g:multi_cursor_select_all_key      = 'g<A-s>'
-let g:multi_cursor_next_key            = '<C-s>'
-let g:multi_cursor_prev_key            = '<C-p>'
-let g:multi_cursor_skip_key            = '<C-x>'
-let g:multi_cursor_quit_key            = '<Esc>'
-
+let g:multi_cursor_use_default_mapping=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => surround.vim config
