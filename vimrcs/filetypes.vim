@@ -79,4 +79,4 @@ autocmd BufRead *.twig set syntax=html filetype=html
 """"""""""""""""""""""""""""""
 " => JSON section 
 """"""""""""""""""""""""""""""
-autocmd FileType json autocmd BufWritePre <buffer> %!python -m json.tool
+" autocmd FileType json autocmd BufWritePre <buffer> %!jq '.'
